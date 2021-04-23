@@ -6,7 +6,7 @@ permalink: /pdf
 <html>
   <head>
     <title>PDF</title>
-    <link rel="shortcut icon" href="cropped-circle.png">
+    <link rel="shortcut icon" href="https://aguaproject.github.io/cropped-circle.png">
     <meta name="description" content="Join Salem Montessori School as we fundraise for a well to be installed in Guatemala">
     <!-- Facebook Meta Tags -->
     <meta property="og:url" content="https://aguaproject.github.io/">
@@ -28,9 +28,11 @@ permalink: /pdf
   <body>
     <embed style="position:absolute; left: 0; top: 0;" width="100%" height="100%" type="application/pdf" id="pdf">
     <script>
+    if (navigator.userAgent.indexOf('MSIE')!==-1 || navigator.appVersion.indexOf('Trident/')) {
         const url = new URL(location.href);
         document.getElementsByTagName("embed")[0].setAttribute("src", "https://aguaproject.github.io/"+url.searchParams.get('u'));
         document.title = url.searchParams.get('u');
+    }
     </script>
   </body>
 </html>
