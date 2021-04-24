@@ -30,7 +30,7 @@ permalink: /pdf
     <script>
     if (navigator.userAgent.indexOf('MSIE')!==-1 || navigator.appVersion.indexOf('Trident/')) {
         const url = new URL(location.href);
-        document.getElementsByTagName("embed")[0].setAttribute("src", "https://aguaproject.github.io/"+url.searchParams.get('u'));
+        document.getElementsByTagName("embed")[0].setAttribute("src", "https://aguaproject.github.io/pdf/"+url.searchParams.get('u'));
         document.title = url.searchParams.get('u');
     }
     </script>
