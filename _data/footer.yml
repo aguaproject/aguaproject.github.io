@@ -2,16 +2,16 @@ docs_list_title: Footer
 content:
 - title: Home 
   url: /
-  seperator: |
+  seperator: '|'
 
 - title: Fliers 
   url: /pdf/
-  seperator: |
+  seperator: '|'
 
 - title: Donate 
   url: /donate/
-  seperator: |
+  seperator: '|'
 
 - title: Locations 
   url: /locations/
-  seperator: 
+  seperator: '&nbsp;'
