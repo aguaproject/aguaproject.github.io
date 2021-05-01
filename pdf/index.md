@@ -3,6 +3,6 @@ title: Fliers
 permalink: /pdf/
 ---
 # Fliers
-{% for item in site.footer.content %}
-    - [{{ item.title }}]({{ item.url }})
+{% for item in site.static_pages %}
+    - [{{ item.name }}]({{ item.path }})
 {% endfor %}
