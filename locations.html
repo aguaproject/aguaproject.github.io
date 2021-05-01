@@ -85,7 +85,7 @@ permalink: /locations
     	</div>
         <footer style="position: absolute;left: 0; bottom: 0; width: 100%; height: 5.75vh; background-color: #333; color: white; padding: 1vh 1vw;">
             {% for item in site.data.footer.content %}
-                <a href="{{ item.url }}">{{ item.title }}</a>&nbsp;|&nbsp;
+                <a href="{{ item.url }}">{{ item.title }}</a>{{ item.seperator }}
             {% endfor %}
         </footer>
     </body>
