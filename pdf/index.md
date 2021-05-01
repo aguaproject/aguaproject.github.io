@@ -3,8 +3,8 @@ title: Fliers
 permalink: /pdf/
 ---
 # Fliers
-{% for item in site.static_files %}
-     {% if item.extname == 'pdf' %}
-         <img src="{{ file.url }}" />
-     {% endif %}
+{% for file in site.static_files %}
+  {%- if file.extname == ".pdf" -%}
+      - [{{ file.path }}]({{ site.baseurl }}{{ file.path }})
+  {%- endif -%}
 {% endfor %}
