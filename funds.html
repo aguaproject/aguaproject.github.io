@@ -1,0 +1,82 @@
+---
+title: Funds
+permalink: /funds/
+---
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Funds | Agua Project</title>
+		<meta charset="utf-8">
+        <link rel="shortcut icon" href="/circle-cropped-192x192.png" width="192" height="192">
+        <link rel="icon" href="/circle-cropped-192x192.png">
+        <link rel="favicon" href="/circle-cropped-192x192.png">
+        <meta name="description" content="Join Salem Montessori School as we fundraise for a well to be installed in Guatemala">
+        <!-- Facebook Meta Tags -->
+        <meta property="og:url" content="https://aguaproject.github.io/donate">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Agua Project">
+        <meta property="og:description" content="Join Salem Montessori School as we fundraise for a well to be installed in Guatemala">
+        <meta property="og:image" content="https://aguaproject.github.io/circle-cropped.png">
+        <!-- Twitter Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta property="twitter:domain" content="">
+        <meta property="twitter:url" content="https://aguaproject.github.io/donate">
+        <meta name="twitter:title" content="Agua Project">
+        <meta name="twitter:description" content="Join Salem Montessori School as we fundraise for a well to be installed in Guatemala">
+        <meta name="twitter:image" content="https://aguaproject.github.io/circle-cropped.png">
+        <!-- Meta Tags Generated via https://www.opengraph.xyz -->
+        <link rel="canonical" href="https://aguaproject.github.io/donate">
+        <link rel="shortlink" href="https://aguaproject.github.io/donate">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            body,p{font-size:18px!important;}h1,h2,h3,h4,h5,h6{font-weight:bold;}:root{--black:rgba(0,0,0,1);}p.h4 a{color:var(--purple);}p.h4 a:hover{color:#361f61;}p.h4{font-weight:normal!important;}
+        </style>
+        <script>
+            var favicon = document.createElement("link");
+            favicon.rel = "favicon";
+            favicon.href = "/circle-cropped-192x192.png";
+            document.head.appendChild(favicon);
+        </script>
+    </head>
+    <body style="background-image: url(/3912628B-B1D2-44E3-9592-757622CA5C43.JPEG); background-repeat: no-repeat; background-position: top center; color: var(--black);">
+        <div class="jumbotron text-center" style="background-color: transparent;">
+            <h1>Funds</h1>
+			<h2 style="text-align: center;">Guatemala Agua Project</h2>
+        	<hr>
+        </div>
+        <div class="container">
+           	<div class="row">
+              	<div class="col-sm-4" style="border: 0px solid black; border-radius: 4px; backdrop-filter: blur(10px);">
+                	<h2 style="text-decoration: underline;font-weight: bolder;user-select: none; visibility: hidden;">&nbsp;</h2>
+                	<p class=".h4">
+                        Donations may be devlivered to one of our <a href="/locations">Locations</a>.
+                    </p>
+              	</div>
+              	<div class="col-sm-4" style="text-align: left; border-left: 1px solid var(--black); border-right: 1px solid var(--black);">
+					<h3 style="text-align: center;">Funds raised so far:</h3>
+                	<p style="text-align: center;">
+                        <samp>${% for item in site.data.funds.content %}{{ item.number }}{% endfor %}</samp>
+                    </p>
+              	</div>
+              	<div class="col-sm-4" style="text-align: right; visibility: hidden;">
+                	<h2 style="text-decoration: underline;font-weight: bolder;">Check</h2>        
+                	<p class=".h4">
+                        Checks may be made payable to 
+                        <code style="white-space: nowrap;">Salem Montessori School</code>
+                        for 
+                        <code style="white-space: nowrap;">Guatemala Agua Project</code>
+					</p>
+              	</div>
+            </div>
+    	</div>
+        <footer style="position: absolute;left: 0; bottom: 0; width: 100%; height: 5.75vh; background-color: #333; color: white; padding: 1vh 1vw;">
+            {% for item in site.data.footer.content %}
+                <a href="{{ item.url }}">{{ item.title }}</a> {{ item.seperator }}
+            {% endfor %}
+        </footer>
+    </body>
+</html>

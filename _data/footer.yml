@@ -14,4 +14,8 @@ content:
 
 - title: Locations 
   url: /locations/
+  seperator: '|'
+
+- title: Funds Raised 
+  url: /funds/
   seperator: '&nbsp;'
