@@ -61,7 +61,7 @@ permalink: /funds/
                 	<p style="text-align: center;">
                         <samp>${% for item in site.data.funds.content %}{{ item.number }}{% endfor %}</samp><br><wbr>
                         <progress id="file" max="1200" value="{% for item in site.data.funds.content %}{{ item.number }}{% endfor %}">{% for item in site.data.funds.content %}{{ item.number }}{% endfor %}&percnt;</progress><br><wbr>
-                        <script>Math.round((document.getElementById(file).value / 1200) * 100) + "%"</script>
+                        <script>Math.round((document.getElementById('file').value / 1200) * 100) + "%"</script>
                     </p>
               	</div>
               	<div class="col-sm-4" style="text-align: right; visibility: hidden;">
