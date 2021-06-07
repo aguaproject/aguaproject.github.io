@@ -60,6 +60,7 @@ permalink: /funds/
 					<h3 style="text-align: center;">Funds raised so far:</h3>
                 	<p style="text-align: center;">
                         <samp>${% for item in site.data.funds.content %}{{ item.number }}{% endfor %}</samp>
+                        <progress id="file" max="1200" value="{% for item in site.data.funds.content %}{{ item.number }}{% endfor %}">{% for item in site.data.funds.content %}{{ item.number }}{% endfor %}&percnt;</progress>
                     </p>
               	</div>
               	<div class="col-sm-4" style="text-align: right; visibility: hidden;">
