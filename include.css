@@ -1,0 +1,27 @@
+:root { --black: rgba(0,0,0,1); }
+
+body {
+    background-image: url(/3912628B-B1D2-44E3-9592-757622CA5C43.JPEG);
+    background-repeat: no-repeat;
+    background-position: top center;
+    color: var(--black);
+    font-size: 18px !important;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5.75vh;
+    background-color: #333;
+    color: white;
+    padding: 1vh 1vw;
+}
+
+h1, h2, h3, h4, h5, h6 { font-weight:bold; }
+
+p.h4 a{ color: var(--purple); }
+p.h4 a:hover{ color: #361f61; }
+
+p.h4{ font-weight: normal !important; }

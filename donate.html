@@ -9,7 +9,6 @@ permalink: /donate/
 		<meta charset="utf-8">
         <link rel="shortcut icon" href="/circle-cropped-192x192.png" width="192" height="192">
         <link rel="icon" href="/circle-cropped-192x192.png">
-        <link rel="favicon" href="/circle-cropped-192x192.png">
         <meta name="description" content="Join Salem Montessori School as we fundraise for a well to be installed in Guatemala">
         <!-- Facebook Meta Tags -->
         <meta property="og:url" content="https://aguaproject.github.io/donate">
@@ -32,16 +31,8 @@ permalink: /donate/
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
-        <style>
-            body,p{font-size:18px!important;}h1,h2,h3,h4,h5,h6{font-weight:bold;}:root{--black:rgba(0,0,0,1);}p.h4 a{color:var(--purple);}p.h4 a:hover{color:#361f61;}p.h4{font-weight:normal!important;}
-        </style>
-        <script>
-            var favicon = document.createElement("link");
-            favicon.rel = "favicon";
-            favicon.href = "/circle-cropped-192x192.png";
-            document.head.appendChild(favicon);
-        </script>
     </head>
+    
     <body style="background-image: url(/3912628B-B1D2-44E3-9592-757622CA5C43.JPEG); background-repeat: no-repeat; background-position: top center; color: var(--black);">
         <div class="jumbotron text-center" style="background-color: transparent;">
             <h1>Donate</h1>
@@ -79,7 +70,7 @@ permalink: /donate/
     	</div>
         <footer style="position: absolute;left: 0; bottom: 0; width: 100%; height: 5.75vh; background-color: #333; color: white; padding: 1vh 1vw;">
             {% for item in site.data.footer.content %}
-                <a href="{{ item.url }}">{{ item.title }}</a> {{ item.seperator }}
+                <a href="{{ item.url }}">{{ item.title }}</a> {{ item.separator }}
             {% endfor %}
         </footer>
     </body>
