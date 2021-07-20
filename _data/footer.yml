@@ -2,24 +2,24 @@ docs_list_title: Footer
 content:
 - title: Home 
   url: /
-  seperator: '|'
+  separator: '|'
 
 - title: Fliers 
   url: /pdf/
-  seperator: '|'
+  separator: '|'
 
 - title: Donate 
   url: /donate/
-  seperator: '|'
+  separator: '|'
 
 - title: Locations 
   url: /locations/
-  seperator: '|'
+  separator: '|'
 
 - title: Funds Raised 
   url: /funds/
-  seperator: '|'
+  separator: '|'
 
 - title: aguaproject.22web.org
   url: http://aguaproject.22web.org
-  seperator: '|'
+  separator: '&nbsp;'
