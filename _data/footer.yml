@@ -18,4 +18,8 @@ content:
 
 - title: Funds Raised 
   url: /funds/
-  seperator: '&nbsp;'
+  seperator: '|'
+
+- title: aguaproject.22web.org
+  url: http://aguaproject.22web.org
+  seperator: '|'
