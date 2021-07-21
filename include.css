@@ -6,10 +6,13 @@ body {
     background-position: top center;
     color: var(--black);
     font-size: 18px !important;
+} body, html {
+    height: 100%;
+    z-index: 99;
 }
 
 footer {
-    position: absolute;
+    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -17,6 +20,9 @@ footer {
     background-color: #333;
     color: white;
     padding: 1vh 1vw;
+    clear: both;
+    z-index: 100;
+    margin-bottom: 0px;
 }
 
 h1, h2, h3, h4, h5, h6 { font-weight:bold; }
@@ -25,3 +31,9 @@ p.h4 a{ color: var(--purple); }
 p.h4 a:hover{ color: #361f61; }
 
 p.h4{ font-weight: normal !important; }
+
+h2.privacy, p.privacy, #gen {
+    text-decoration: none !important;
+    font-weight: bolder !important;
+    text-align: center !important;
+}
