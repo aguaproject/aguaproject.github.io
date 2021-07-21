@@ -4,6 +4,7 @@ body {
     background-image: url(/3912628B-B1D2-44E3-9592-757622CA5C43.JPEG);
     background-repeat: no-repeat;
     background-position: top center;
+    background-attachment: fixed;
     color: var(--black);
     font-size: 18px !important;
 } body, html {
