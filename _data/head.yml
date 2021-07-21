@@ -1,5 +1,5 @@
 docs_list_title: Head
-single-contents:
+single:
 - element: meta
   selector: charset
   content: utf-8
@@ -12,7 +12,7 @@ single-contents:
   selector: src
   content: https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js
 
-link-contents:
+link:
 - rel: stylesheet
   href: /include.css
 
@@ -34,7 +34,7 @@ link-contents:
 - rel: stylesheet
   href: https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css
 
-meta-contents:
+meta:
 - selector: name
   type: description
   content: Join Salem Montessori School as we fundraise for a well to be installed in Guatemala
