@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% for item in site.data.head.single-contents %}
+                <{{ item.element }} {{ item.selector }}="{{ item.content }}">
+        {% endfor %}
+        {% for item in site.data.head.link-contents %}
+                <link rel="{{ item.rel }}" href="{{ item.href }}">
+        {% endfor %}
+        {% for item in site.data.head.meta-contents %}
+                <meta {{ item.selector }}="{{ item.type }}" content="{{ item.content }}">
+        {% endfor %}
+    </head>
+</html>

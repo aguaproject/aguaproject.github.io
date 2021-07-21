@@ -1,0 +1,88 @@
+docs_list_title: Head
+single-contents:
+- element: meta
+  selector: charset
+  content: utf-8
+
+- element: script
+  selector: src
+  content: https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js
+
+- element: script
+  selector: src
+  content: https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js
+
+link-contents:
+- rel: stylesheet
+  href: /include.css
+
+- rel: shortcut icon
+  href: /circle-cropped-192x192.png
+
+- rel: icon
+  href: /circle-cropped-192x192.png
+
+- rel: canonical
+  href: https://aguaproject.github.io/
+
+- rel: shortlink
+  href: https://aguaproject.github.io/
+
+- rel: stylesheet
+  href: https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css
+
+- rel: stylesheet
+  href: https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css
+
+meta-contents:
+- selector: name
+  type: description
+  content: Join Salem Montessori School as we fundraise for a well to be installed in Guatemala
+
+- selector: property
+  type: og:url
+  content: https://aguaproject.github.io/
+
+- selector: property
+  type: og:type
+  content: website
+
+- selector: property
+  type: og:title
+  content: Agua Project
+
+- selector: property
+  type: og:description
+  content: Join Salem Montessori School as we fundraise for a well to be installed in Guatemala
+
+- selector: property
+  type: og:image
+  content: https://aguaproject.github.io/circle-cropped.png
+
+- selector: name
+  type: twitter:card
+  content: summary_large_image
+
+- selector: property
+  type: twitter:domain
+  content: aguaproject.github.io
+
+- selector: property
+  type: twitter:url
+  content: https://aguaproject.github.io/
+
+- selector: name
+  type: twitter:title
+  content: Agua Project
+
+- selector: name
+  type: twitter:description
+  content: Join Salem Montessori School as we fundraise for a well to be installed in Guatemala
+
+- selector: name
+  type: twitter:image
+  content: https://aguaproject.github.io/cropped-circle.png
+
+- selector: name
+  type: viewport
+  content: width=device-width, initial-scale=1
