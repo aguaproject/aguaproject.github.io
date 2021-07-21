@@ -7,7 +7,7 @@ permalink: head.html
 <html>
     <head>
         {% for item in site.data.head.single %}
-                <{{ item.element }} {{ item.selector }}="{{ item.content }}">
+                <{{ item.element }} {{ item.selector }}="{{ item.content }}">{{ item.terminator }}
         {% endfor %}
         {% for item in site.data.head.link %}
                 <link rel="{{ item.rel }}" href="{{ item.href }}">

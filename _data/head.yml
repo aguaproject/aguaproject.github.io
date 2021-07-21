@@ -3,14 +3,17 @@ single:
 - element: meta
   selector: charset
   content: utf-8
+  terminator: 
 
 - element: script
   selector: src
   content: https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js
+  terminator: </script>
 
 - element: script
   selector: src
   content: https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js
+  terminator: </script>
 
 link:
 - rel: stylesheet
