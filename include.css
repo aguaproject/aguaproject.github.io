@@ -31,6 +31,8 @@ h1, h2, h3, h4, h5, h6 { font-weight:bold; }
 p.h4 a, a{ color: var(--purple); }
 p.h4 a:hover, a:hover{ color: #361f61; }
 
+footer a {color: initial;}
+
 p.h4{ font-weight: normal !important; }
 
 h2.privacy, p.privacy, #gen {
