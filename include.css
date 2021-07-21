@@ -28,8 +28,8 @@ footer {
 
 h1, h2, h3, h4, h5, h6 { font-weight:bold; }
 
-p.h4 a, a{ color: var(--purple) !important; }
-p.h4 a:hover, a:hover { color: #361f61 !important; }
+p.h4 a, a{ color: var(--indigo) !important; }
+p.h4 a:hover, a:hover { color: var(--purple) !important; }
 
 li {color: inherit !important;}
 
