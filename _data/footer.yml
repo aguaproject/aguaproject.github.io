@@ -20,6 +20,10 @@ content:
   url: /funds/
   separator: '|'
 
+- title: Privacy Policy
+  url: /privacy/
+  separator: '|'
+
 - title: aguaproject.22web.org
   url: http://aguaproject.22web.org
   separator: '&nbsp;'
