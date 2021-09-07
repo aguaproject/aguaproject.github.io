@@ -217,9 +217,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 </div>
             </div>
     	</div>
-        <footer class="footer">
+        <footer>
             {% for item in site.data.footer.content %}
-                <a href="{{ item.url }}">{{ item.title }}</a> {{ item.separator }}
+                <a href="{{ item.url }}" title="{{ item.title }}">{{ item.title }}</a> {{ item.separator }}
             {% endfor %}
         </footer>
     </body>
