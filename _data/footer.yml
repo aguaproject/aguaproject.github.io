@@ -5,25 +5,21 @@ content:
   separator: '|'
 
 - title: Fliers 
-  url: /pdf/
+  url: /pdf
   separator: '|'
 
 - title: Donate 
-  url: /donate/
+  url: /donate
   separator: '|'
 
 - title: Locations 
-  url: /locations/
+  url: /locations
   separator: '|'
 
 - title: Funds Raised 
-  url: /funds/
+  url: /funds
   separator: '|'
 
 - title: Privacy Policy
-  url: /privacy/
-  separator: '|'
-
-- title: aguaproject.22web.org
-  url: http://aguaproject.22web.org
+  url: /privacy
   separator: '&nbsp;'
