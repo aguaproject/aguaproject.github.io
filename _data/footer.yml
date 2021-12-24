@@ -22,4 +22,8 @@ content:
 
 - title: Privacy Policy
   url: /privacy
+  separator: '|'
+
+- title: Hosted by RoyalityFree
+  url: https://royalityfree.com
   separator: '&nbsp;'
