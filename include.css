@@ -19,7 +19,7 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 5.75vh;
+    height: auto;
     background-color: #333;
     color: white;
     padding: 1vh 1vw;
@@ -34,8 +34,8 @@ h1 {font-size: 3.25rem !important;}
 h2 {font-size: 1.375rem !important;}
 
 a { color: #0d6efd; color: var(--bs-blue); }
-a:visited {color: #6f42c1; color: var(--bs-purple);}
-a:hover { color: #6610f2; color: var(--bs-indigo);}
+a:visited {color: #0c5dec; color: var(--bs-purple);}
+a:hover { color: #0b4cdb; color: var(--bs-indigo);}
 
 li {color: inherit !important;}
 

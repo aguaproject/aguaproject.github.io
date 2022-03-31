@@ -50,9 +50,9 @@ permalink: /pdf
               	<div class="col-sm-4">
                     <ul>
                         {% for file in site.static_files %}
-                            {%- if file.extname == ".pdf" -%}
+                            {% if file.extname == ".pdf" %}
                                 <li><a href="/cgi-bin/pdf-open?u={{ file.name }}">{{ file.name }}</a></li>
-                            {%- endif -%}
+                            {% endif %}
                         {% endfor %}
                     </ul>
               	</div>
