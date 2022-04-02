@@ -9,8 +9,9 @@ permalink: /cgi-bin/pdf-open
     <meta charset="utf-8">
     <meta http-equiv="Content-Security-Policy" content="
 			default-src 'self'; style-src 'self' 'unsafe-inline'; connect-src 'self'; object-src 'self';
-      img-src 'self' https://cdn.jsdelivr.net/gh/aguaproject/aguaproject.github.io/circle-cropped-192x192.png; 
-			script-src *.clarity.ms:443 https://www.googletagmanager.com/gtag/js https://www.googletagmanager.com/gtm.js; 
+            img-src 'self' https://cdn.jsdelivr.net/gh/aguaproject/aguaproject.github.io/circle-cropped-192x192.png; 
+			script-src 'unsafe-inline' 'self' *.clarity.ms:443 https://www.googletagmanager.com/gtag/js https://www.googletagmanager.com/gtm.js 
+            https://www.aguaproject.ml/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js static.cloudflareinsights.com:443; 
 			frame-src https://www.googletagmanager.com/ns.html; upgrade-insecure-requests; block-all-mixed-content
 		">
     <title>PDF</title>
@@ -39,7 +40,8 @@ permalink: /cgi-bin/pdf-open
       @media (prefers-reduced-motion:no-preference){:root{scroll-behavior: smooth}}
       body{background-image: url("/3912628B-B1D2-44E3-9592-757622CA5C43.webp");background-repeat: no-repeat;background-position: top center;background-attachment: fixed;color: black;color: var(--bs-black);font-size: 18px !important}
       body, html{height: 100%;z-index: 99}
-      footer{position: fixed;left: 0;bottom: 0;width: 100%;height: auto;background-color: #333;color: white;padding: 1vh 1vw;clear: both;z-index: 100;margin-bottom: 0px}
+      footer{position: fixed;left: 0;bottom: 0;width: 100%;height: auto; background-color: #333;color: white;padding: 1vh 1vw;clear: both;z-index: 100;margin-bottom: 0px}
+      @media (max-width: 916px){footer{max-height: 40px; overflow-y: scroll;}}
       html{font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-size: 1rem;font-weight: 400;line-height: 1.5}
   </style>
   </head>
