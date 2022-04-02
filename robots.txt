@@ -1,0 +1,11 @@
+User-Agent: *
+Allow: /
+Sitemap: https://www.aguaproject.ml/sitemap.9-8-2021.xml
+
+User-Agent: yandex
+Disallow: /
+Sitemap: https://www.aguaproject.ml/sitemap.9-8-2021.xml
+
+User-Agent: yandexbot
+Disallow: /
+Sitemap: https://www.aguaproject.ml/sitemap.9-8-2021.xml

@@ -6,6 +6,12 @@ permalink: /404.html
 <html lang="en">
     <head>
 	    <meta charset="utf-8">
+        <meta http-equiv="Content-Security-Policy" content="
+			default-src 'self'; style-src 'self' 'unsafe-inline'; connect-src 'self'; object-src 'self';
+            img-src 'self' https://cdn.jsdelivr.net/gh/aguaproject/aguaproject.github.io/circle-cropped-192x192.png; 
+			script-src 'unsafe-inline' *.clarity.ms:443 https://www.googletagmanager.com/gtag/js https://www.googletagmanager.com/gtm.js; 
+			frame-src https://www.googletagmanager.com/ns.html; upgrade-insecure-requests; block-all-mixed-content
+		">
         <!-- HTML Meta Tags -->
         <title>404 Not Found | Agua Project</title>
         <meta name="description" content="File not found. Join the Salem Montessori School Adolescent Program as we raise funds to install a well for two families living in Guatemala.">
@@ -31,9 +37,44 @@ permalink: /404.html
         <link rel="canonical" href="https://www.aguaproject.ml/404.html">
         <link rel="shortlink" href="https://www.aguaproject.ml/404.html">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <link rel="stylesheet" href="/include.css">
+        <style>
+            :root{--black: rgba(0,0,0,1); --bs-font-sans-serif: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--bs-font-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;--bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));--bs-body-font-family: var(--bs-font-sans-serif);--bs-body-font-size: 1rem;--bs-body-font-weight: 400;--bs-body-line-height: 1.5;--bs-body-color: #212529;--bs-body-bg: #fff;--bs-gutter-x: 1.5rem;--bs-gutter-y: 0;}
+			*,::after,::before{box-sizing: border-box}
+            * {font-family: var(--bs-body-font-family);}
+			@media (prefers-reduced-motion:no-preference){:root{scroll-behavior: smooth}}
+			body{margin: 0;font-family: var(--bs-body-font-family);font-size: var(--bs-body-font-size);font-weight: var(--bs-body-font-weight);line-height: var(--bs-body-line-height);color: var(--bs-body-color);text-align: var(--bs-body-text-align);background-color: var(--bs-body-bg);-webkit-text-size-adjust: 100%;-webkit-tap-highlight-color: transparent}
+			hr{margin: 1rem 0;color: inherit;background-color: currentColor;border: 0;opacity: .25}hr:not([size]){height: 1px}
+            .mt-2 {margin-top: .5rem!important}
+			a{color: #0d6efd;text-decoration: underline}
+			code,kbd,pre,samp{font-family: var(--bs-font-monospace);font-size: 1em;direction: ltr;unicode-bidi: bidi-override}
+            code{font-size: .875em;color: #d63384;word-wrap: break-word}
+			.container,.container-fluid,.container-lg,.container-md,.container-sm,.container-xl,.container-xxl{width: 100%;padding-right: var(--bs-gutter-x,.75rem);padding-left: var(--bs-gutter-x,.75rem);margin-right: auto;margin-left: auto}
+			@media (min-width: 576px){.container,.container-sm{max-width:540px}}
+			@media (min-width: 768px){.container,.container-md,.container-sm{max-width:720px}}
+			@media (min-width: 992px){.container,.container-lg,.container-md,.container-sm{max-width:960px}}
+			@media (min-width: 1200px){.container,.container-lg,.container-md,.container-sm,.container-xl{max-width:1140px}}
+			@media (min-width: 1400px){.container,.container-lg,.container-md,.container-sm,.container-xl,.container-xxl{max-width:1320px}}
+			.row{display: flex;flex-wrap: wrap;margin-top: calc(-1 * var(--bs-gutter-y));margin-right: calc(-.5 * var(--bs-gutter-x));margin-left: calc(-.5 * var(--bs-gutter-x))}
+			.row>*{flex-shrink: 0;width: 100%;max-width: 100%;padding-right: calc(var(--bs-gutter-x) * .5);padding-left: calc(var(--bs-gutter-x) * .5);margin-top: var(--bs-gutter-y)}
+			@media (min-width: 576px){.col-sm-4{flex: 0 0 auto;width: 33.33333333%}}
+			.text-center{text-align: center!important}
+            .btn{display: inline-block;font-weight: 400;line-height: 1.5;color: #212529;text-align: center;text-decoration: none;vertical-align: middle;cursor: pointer;-webkit-user-select: none;-moz-user-select: none;
+            user-select: none;background-color: transparent;border: 1px solid transparent;padding: .375rem .75rem;font-size: 1rem;border-radius: .25rem;transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}
+            @media (prefers-reduced-motion:reduce){.btn{transition: none}}
+            .btn:hover{color: #212529}
+            .btn-secondary{color: #fff;background-color: #6c757d;border-color: #6c757d}
+            .btn-secondary:hover{color: #fff;background-color: #5c636a;border-color: #565e64}
+            .btn-secondary:focus{color: #fff;background-color: #5c636a;border-color: #565e64;box-shadow: 0 0 0 .25rem rgba(130,138,145,.5)}
+            .btn-secondary,.btn-secondary:active{color: #fff;background-color: #565e64;border-color: #51585e}
+			body{background-image: url("/3912628B-B1D2-44E3-9592-757622CA5C43.webp");background-repeat: no-repeat;background-position: top center;background-attachment: fixed;color: black;color: var(--bs-black);font-size: 18px !important}
+			body, html{height: 100%;z-index: 99}
+			footer{position: fixed;left: 0;bottom: 0;width: 100%;height: auto;background-color: #333;color: white;padding: 1vh 1vw;clear: both;z-index: 100;margin-bottom: 0px}
+			h1, h2{font-weight:semi-bold;font-weight: 600}
+			h1{font-size: 3.25rem !important}
+            .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{margin-top: 0;margin-bottom: 0.5rem;font-weight: 500;line-height: 1.2}
+			a{color: hsl(190, 90%, 50%) !important}a:visited{color: hsl(190, 90%, 47.5%) !important}a:hover{color: hsl(190, 90%, 45%) !important}
+			html{font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-size: 1rem;font-weight: 400;line-height: 1.5}
+        </style>
     </head>
 
     <body>
@@ -49,7 +90,7 @@ permalink: /404.html
               	<div class="col-sm-4"></div>
               	<div class="col-sm-4" style="text-align: center;">
                     The requested file at <code id="404"></code> could not be found.
-                    <button onclick="location.href = '/';" class="btn btn-outline-secondary mt-2" style="display: block;position: relative; margin: 0 auto;">Return Home</button>
+                    <a href="/" style="text-decoration: none; color: inherit;"><button class="btn btn-secondary w-100 px-2 mt-2" style="display: block;position: relative; margin: 0 auto;width: 100%!important;">Return Home</button></a>
               	</div>
               	<div class="col-sm-4"></div>
             </div>

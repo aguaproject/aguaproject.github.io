@@ -21,7 +21,11 @@ content:
   separator: '|'
 
 - title: Privacy Policy
-  url: /privacy
+  url: /privacy/policy
+  separator: '|'
+
+- title: salemmontessori.org
+  url: https://www.salemmontessori.org
   separator: '|'
 
 - title: Hosted by RoyalityFree

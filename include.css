@@ -1,7 +1,7 @@
 :root { --black: rgba(0,0,0,1); }
 
 body {
-    background-image: url("https://cdn.jsdelivr.net/gh/aguaproject/aguaproject.github.io/3912628B-B1D2-44E3-9592-757622CA5C43.JPEG");
+    background-image: url("/3912628B-B1D2-44E3-9592-757622CA5C43.webp");
     background-repeat: no-repeat;
     background-position: top center;
     background-attachment: fixed;
@@ -33,9 +33,9 @@ h1, h2 { font-weight:semi-bold; font-weight: 600; }
 h1 {font-size: 3.25rem !important;}
 h2 {font-size: 1.375rem !important;}
 
-a { color: #0d6efd;}
-a:visited {color: #0c5dec;}
-a:hover { color: #0b4cdb;}
+a { color: hsl(190, 90%, 50%) !important;}
+a:visited {color: hsl(190, 90%, 47.5%) !important;}
+a:hover { color: hsl(190, 90%, 45%) !important;}
 
 li {color: inherit !important;}
 
