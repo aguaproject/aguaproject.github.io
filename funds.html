@@ -39,7 +39,7 @@ permalink: /funds
         <link rel="shortlink" href="https://www.aguaproject.ml/funds">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
-            :root{--black: rgba(0,0,0,1); --bs-font-sans-serif: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--bs-font-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;--bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));--bs-body-font-family: var(--bs-font-sans-serif);--bs-body-font-size: 1rem;--bs-body-font-weight: 400;--bs-body-line-height: 1.5;--bs-body-color: #212529;--bs-body-bg: #fff;--bs-gutter-x: 1.5rem;--bs-gutter-y: 0;}
+            :root{--bs-success-rgb: 25,135,84;--bs-warning-rgb: 255,193,7;--bs-danger-rgb: 220,53,69; --black: rgba(0,0,0,1); --bs-font-sans-serif: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--bs-font-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;--bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));--bs-body-font-family: var(--bs-font-sans-serif);--bs-body-font-size: 1rem;--bs-body-font-weight: 400;--bs-body-line-height: 1.5;--bs-body-color: #212529;--bs-body-bg: #fff;--bs-gutter-x: 1.5rem;--bs-gutter-y: 0;}
 			*,::after,::before{box-sizing: border-box}
             * {font-family: var(--bs-body-font-family);}
 			@media (prefers-reduced-motion:no-preference){:root{scroll-behavior: smooth}}
@@ -67,8 +67,8 @@ permalink: /funds
 			@media (min-width: 576px){.col-sm-4{flex: 0 0 auto;width: 33.33333333%}}
 			.mt-5{margin-top: 3rem!important} .pt-4{padding-top: 1.5rem!important}
 			.text-center{text-align: center!important}
-			body{background-image: url("/3912628B-B1D2-44E3-9592-757622CA5C43.webp");background-repeat: no-repeat;background-position: top center;background-attachment: fixed;color: black;color: var(--bs-black);font-size: 18px !important}
-			body, html{height: 100%;z-index: 99}
+			body{background-image: url("/3912628B-B1D2-44E3-9592-757622CA5C43.webp");background-repeat: no-repeat;background-position: top center;background-attachment: fixed;color: black;color: var(--bs-black);font-size: 18px !important;background-color: #69aed7;}
+			body, html{height: 100%;z-index: 99;}
 			footer{position: fixed;left: 0;bottom: 0;width: 100%;height: auto; background-color: #333;color: white;padding: 1vh 1vw;clear: both;z-index: 100;margin-bottom: 0px}
 			@media (max-width: 916px){footer{max-height: 40px; overflow-y: scroll;}}
             h1, h2{font-weight:semi-bold;font-weight: 600}
@@ -78,6 +78,13 @@ permalink: /funds
             html{font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-size: 1rem;font-weight: 400;line-height: 1.5}
 			samp{font-family: Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace}
             body {margin: auto 1rem;} .container {margin-bottom: 6rem;}
+            .visually-hidden,.visually-hidden-focusable:not(:focus):not(:focus-within){position: absolute!important;width: 1px!important;height: 1px!important;padding: 0!important;margin: -1px!important;overflow: hidden!important;clip: rect(0,0,0,0)!important;white-space: nowrap!important;border: 0!important}.d-none{display: none!important}
+            .progress{display: flex;height: 1rem;overflow: hidden;font-size: .75rem;background-color: #e9ecef;border-radius: .25rem}
+            .progress-bar{display: flex;flex-direction: column;justify-content: center;overflow: hidden;color: #fff;text-align: center;white-space: nowrap;background-color: #0d6efd;transition: width .6s ease}
+            @media (prefers-reduced-motion:reduce){.progress-bar{transition: none}}
+            .bg-warning{--bs-bg-opacity: 1;background-color: rgba(var(--bs-warning-rgb),var(--bs-bg-opacity))!important}
+            .bg-danger{--bs-bg-opacity: 1;background-color: rgba(var(--bs-danger-rgb),var(--bs-bg-opacity))!important}
+            .bg-success{--bs-bg-opacity: 1;background-color: rgba(var(--bs-success-rgb),var(--bs-bg-opacity))!important}
         </style>
     </head>
     <body>
@@ -88,29 +95,33 @@ permalink: /funds
         </div>
         <div class="container">
            	<div class="row">
-              	<div class="col-sm-4" style="border: 0px solid black; border-radius: 4px; backdrop-filter: blur(10px); visibility: hidden;">
-                	<h2 style="text-decoration: underline;font-weight: bolder;user-select: none; visibility: hidden;">&nbsp;</h2>
-                	<p class=".h4">
-                        Donations may be devlivered to one of our <a rel="follow" class="body-link" href="/locations">Locations</a>.
+              	<div class="col-sm-4"></div>
+              	<div class="col-sm-4" style="text-align: center;">
+					<h3 class="h4">Funds raised so far:</h3>
+                	<p id="h4">
+                        <span>$<samp>{% for item in site.data.funds.content %}{{ item.number }}{% endfor %}</samp></span>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="1200"
+                                aria-valuenow="{% for item in site.data.funds.content %}{{ item.number }}{% endfor %}">
+                            </div>
+                        </div>
+                        <span><samp id="percent"></samp>% of the way there!</span>
                     </p>
+                    <script>
+                        var jN = Number('{% for item in site.data.funds.content %}{{ item.number }}{% endfor %}');
+                        var d = Math.round((jN / 1200) * 100);
+                        document.querySelector('samp#percent').innerText = `${d}`;
+                        document.querySelector('div.progress-bar').style.width = `${d}%`;
+                        if (d <= 25) {
+                            document.querySelector('div.progress-bar').classList.add('bg-danger');
+                        } else if (d < 75) {
+                            document.querySelector('div.progress-bar').classList.add('bg-warning');
+                        } else if (d >= 75) {
+                            document.querySelector('div.progress-bar').classList.add('bg-success');
+                        }
+                    </script>
               	</div>
-              	<div class="col-sm-4" style="text-align: left; border-left: 1px solid var(--black); border-right: 1px solid var(--black);">
-					<h3 style="text-align: center;">Funds raised so far:</h3>
-                	<p style="text-align: center;">
-                        <samp>${% for item in site.data.funds.content %}{{ item.number }}{% endfor %}</samp><br><wbr>
-                        <progress id="file" max="1200" value="{% for item in site.data.funds.content %}{{ item.number }}{% endfor %}">{% for item in site.data.funds.content %}{{ item.number }}{% endfor %}&percnt;</progress><br><wbr>
-                    </p>
-                    <script>document.getElementsByTagName('p')[1].innerHTML += "<samp>" + Math.round((document.getElementById('file').value / 1200) * 100) + "%</samp> of the way there!"</script>
-              	</div>
-              	<div class="col-sm-4" style="text-align: right; visibility: hidden;">
-                	<h2 style="text-decoration: underline;font-weight: bolder;">Check</h2>        
-                	<p class=".h4">
-                        Checks may be made payable to 
-                        <code style="white-space: nowrap;">Salem Montessori School</code>
-                        for 
-                        <code style="white-space: nowrap;">Guatemala Agua Project</code>
-					</p>
-              	</div>
+              	<div class="col-sm-4"></div>
             </div>
     	</div>
         <footer>

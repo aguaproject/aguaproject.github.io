@@ -5,6 +5,7 @@ body {
     background-repeat: no-repeat;
     background-position: top center;
     background-attachment: fixed;
+    background-color: #69aed7;
     color: black;
     color: var(--bs-black);
     font-size: 18px !important;
@@ -12,6 +13,7 @@ body {
 } body, html {
     height: 100%;
     z-index: 99;
+    background-color: #69aed7;
 }
 
 footer {
